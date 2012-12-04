@@ -16,8 +16,9 @@
 		EED4E864166E0CBC00AE88DD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EED4E863166E0CBC00AE88DD /* Default.png */; };
 		EED4E866166E0CBC00AE88DD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EED4E865166E0CBC00AE88DD /* Default@2x.png */; };
 		EED4E868166E0CBC00AE88DD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EED4E867166E0CBC00AE88DD /* Default-568h@2x.png */; };
-		EED4E86B166E0CBC00AE88DD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED4E869166E0CBC00AE88DD /* MainStoryboard.storyboard */; };
-		EED4E86E166E0CBC00AE88DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED4E86D166E0CBC00AE88DD /* ViewController.m */; };
+		EED4E875166E0D8C00AE88DD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED4E874166E0D8C00AE88DD /* MainStoryboard.storyboard */; };
+		EED4E878166E0EA800AE88DD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED4E877166E0EA800AE88DD /* RootViewController.m */; };
+		EED4E87A166E0F3E00AE88DD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED4E879166E0F3E00AE88DD /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +35,10 @@
 		EED4E863166E0CBC00AE88DD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EED4E865166E0CBC00AE88DD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EED4E867166E0CBC00AE88DD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		EED4E86A166E0CBC00AE88DD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		EED4E86C166E0CBC00AE88DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EED4E86D166E0CBC00AE88DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EED4E874166E0D8C00AE88DD /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EED4E876166E0EA800AE88DD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		EED4E877166E0EA800AE88DD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		EED4E879166E0F3E00AE88DD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED4E87A166E0F3E00AE88DD /* MediaPlayer.framework in Frameworks */,
 				EED4E852166E0CBC00AE88DD /* UIKit.framework in Frameworks */,
 				EED4E854166E0CBC00AE88DD /* Foundation.framework in Frameworks */,
 				EED4E856166E0CBC00AE88DD /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +59,7 @@
 		EED4E842166E0CBB00AE88DD = {
 			isa = PBXGroup;
 			children = (
+				EED4E879166E0F3E00AE88DD /* MediaPlayer.framework */,
 				EED4E857166E0CBC00AE88DD /* SingleViewVideoDemo */,
 				EED4E850166E0CBC00AE88DD /* Frameworks */,
 				EED4E84E166E0CBB00AE88DD /* Products */,
@@ -85,9 +89,9 @@
 			children = (
 				EED4E860166E0CBC00AE88DD /* AppDelegate.h */,
 				EED4E861166E0CBC00AE88DD /* AppDelegate.m */,
-				EED4E869166E0CBC00AE88DD /* MainStoryboard.storyboard */,
-				EED4E86C166E0CBC00AE88DD /* ViewController.h */,
-				EED4E86D166E0CBC00AE88DD /* ViewController.m */,
+				EED4E874166E0D8C00AE88DD /* MainStoryboard.storyboard */,
+				EED4E876166E0EA800AE88DD /* RootViewController.h */,
+				EED4E877166E0EA800AE88DD /* RootViewController.m */,
 				EED4E858166E0CBC00AE88DD /* Supporting Files */,
 			);
 			path = SingleViewVideoDemo;
@@ -162,7 +166,7 @@
 				EED4E864166E0CBC00AE88DD /* Default.png in Resources */,
 				EED4E866166E0CBC00AE88DD /* Default@2x.png in Resources */,
 				EED4E868166E0CBC00AE88DD /* Default-568h@2x.png in Resources */,
-				EED4E86B166E0CBC00AE88DD /* MainStoryboard.storyboard in Resources */,
+				EED4E875166E0D8C00AE88DD /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +179,7 @@
 			files = (
 				EED4E85E166E0CBC00AE88DD /* main.m in Sources */,
 				EED4E862166E0CBC00AE88DD /* AppDelegate.m in Sources */,
-				EED4E86E166E0CBC00AE88DD /* ViewController.m in Sources */,
+				EED4E878166E0EA800AE88DD /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +192,6 @@
 				EED4E85B166E0CBC00AE88DD /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		EED4E869166E0CBC00AE88DD /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EED4E86A166E0CBC00AE88DD /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -260,6 +256,7 @@
 				GCC_PREFIX_HEADER = "SingleViewVideoDemo/SingleViewVideoDemo-Prefix.pch";
 				INFOPLIST_FILE = "SingleViewVideoDemo/SingleViewVideoDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -271,6 +268,7 @@
 				GCC_PREFIX_HEADER = "SingleViewVideoDemo/SingleViewVideoDemo-Prefix.pch";
 				INFOPLIST_FILE = "SingleViewVideoDemo/SingleViewVideoDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
